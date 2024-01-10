@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--header --------------------->
+    <section class="container">
+        <header>
+            <nav class="nav container">
+                <h2 class="nav_logo"><a href="#">codeWeb</a></h2>
+                <ul class="menu_items">
+                    <img src="CN_img/times.svg" alt="menu close" id="menu_toggle">
+                    <li><a href="#" class="nav_link">Home </a></li>
+                    <li><a href="#" class="nav_link">About</a></li>
+                    <li><a href="#" class="nav_link">Service</a></li>
+                    <li><a href="#" class="nav_link">Project</a></li>
+                    <li><a href="#" class="nav_link">Contact</a></li>
+                </ul>
+                <img src="CN_img/bars.svg" alt="menu bars" id="menu_toggle">
+
+             </nav>
+        </header>
+    </section>
+
+<!--hero ---------------------->
+    <section class="hero">
+        <div class="row">
+
+            <div class="col2">
+                <h2>Top free tool and extension to <br> radily grow your business</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum commodi dolor veniam sint adipisci, sequi, temporibus perferendis cum et perspiciatis optio distinctio eaque natus molestiae mollitia ipsam! Fugit officia a, facere quia dolor nisi quis.</p>
+                <div class="button">
+                    <button class="btn">Read More</button>
+                    <button class="btn">Contact us</button>
+                </div>
+            </div>
+
+            <div class="col2">
+                <img src="CN_img/hero.png" class="hero_img"  alt="hero image">
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        const header = document.querySelector("header");
+        const menuToggler = document.querySelectorAll("#menu_toggle");
+        
+        menuToggler.forEach(toggler => {
+            toggler.addEventListener("click" , () => header.classList.toggle("showMenu"));
+        });
+   
+   </script>
+</body>
+</html>
